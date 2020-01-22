@@ -210,14 +210,14 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(492, 36);
+            this.listBox1.Location = new System.Drawing.Point(488, 13);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(272, 277);
+            this.listBox1.Size = new System.Drawing.Size(217, 225);
             this.listBox1.TabIndex = 18;
             // 
             // btnListar
             // 
-            this.btnListar.Location = new System.Drawing.Point(689, 319);
+            this.btnListar.Location = new System.Drawing.Point(630, 253);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 19;
