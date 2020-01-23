@@ -36,3 +36,4 @@ C:\Users\guilherme.asantos48\source\repos\SncMusic\SncMusic\obj\Debug\SncMusic.c
 C:\Users\guilherme.asantos48\source\repos\SncMusic\SncMusic\obj\Debug\SncMusic.exe
 C:\Users\guilherme.asantos48\source\repos\SncMusic\SncMusic\obj\Debug\SncMusic.pdb
 C:\Users\guilherme.asantos48\source\repos\SncMusic\SncMusic\obj\Debug\SncMusic.FrmProfessor.resources
+C:\Users\guilherme.asantos48\source\repos\SncMusic\SncMusic\obj\Debug\SncMusic.FrmCursos.resources

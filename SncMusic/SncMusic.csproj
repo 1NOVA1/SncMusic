@@ -70,11 +70,24 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Banco.cs" />
+    <Compile Include="Curso.cs" />
     <Compile Include="FrmAluno.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAluno.Designer.cs">
       <DependentUpon>FrmAluno.cs</DependentUpon>
+    </Compile>
+    <None Include="Cadastro de cursos">
+      <SubType>Form</SubType>
+    </None>
+    <Compile Include="FrmCurso.Designer.cs">
+      <DependentUpon>Cadastro de cursos</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCursos.Designer.cs">
+      <DependentUpon>FrmCursos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
@@ -93,6 +106,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmAluno.resx">
       <DependentUpon>FrmAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCursos.resx">
+      <DependentUpon>FrmCursos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
