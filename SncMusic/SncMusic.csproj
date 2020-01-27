@@ -101,6 +101,9 @@
     <EmbeddedResource Include="FrmAluno.resx">
       <DependentUpon>FrmAluno.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCurso.resx">
+      <DependentUpon>FrmCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </EmbeddedResource>

@@ -40,11 +40,11 @@
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblCursos = new System.Windows.Forms.Label();
-            this.lblProfessor = new System.Windows.Forms.Label();
-            this.btnAssociar = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btnAssociar = new System.Windows.Forms.Button();
+            this.lblProfessor = new System.Windows.Forms.Label();
+            this.lblCursos = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,6 +120,7 @@
             this.btnInserir.TabIndex = 8;
             this.btnInserir.Text = "&Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // btnAlterar
             // 
@@ -153,31 +154,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Associar Professor";
             // 
-            // comboBox1
+            // comboBox2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // lblCursos
-            // 
-            this.lblCursos.AutoSize = true;
-            this.lblCursos.Location = new System.Drawing.Point(34, 47);
-            this.lblCursos.Name = "lblCursos";
-            this.lblCursos.Size = new System.Drawing.Size(39, 13);
-            this.lblCursos.TabIndex = 17;
-            this.lblCursos.Text = "Cursos";
-            // 
-            // lblProfessor
-            // 
-            this.lblProfessor.AutoSize = true;
-            this.lblProfessor.Location = new System.Drawing.Point(176, 47);
-            this.lblProfessor.Name = "lblProfessor";
-            this.lblProfessor.Size = new System.Drawing.Size(51, 13);
-            this.lblProfessor.TabIndex = 18;
-            this.lblProfessor.Text = "Professor";
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(179, 73);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(137, 21);
+            this.comboBox2.TabIndex = 20;
             // 
             // btnAssociar
             // 
@@ -188,15 +171,33 @@
             this.btnAssociar.Text = "Associar";
             this.btnAssociar.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // lblProfessor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(179, 73);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 21);
-            this.comboBox2.TabIndex = 20;
+            this.lblProfessor.AutoSize = true;
+            this.lblProfessor.Location = new System.Drawing.Point(176, 47);
+            this.lblProfessor.Name = "lblProfessor";
+            this.lblProfessor.Size = new System.Drawing.Size(51, 13);
+            this.lblProfessor.TabIndex = 18;
+            this.lblProfessor.Text = "Professor";
             // 
-            // FrmCursos
+            // lblCursos
+            // 
+            this.lblCursos.AutoSize = true;
+            this.lblCursos.Location = new System.Drawing.Point(34, 47);
+            this.lblCursos.Name = "lblCursos";
+            this.lblCursos.Size = new System.Drawing.Size(39, 13);
+            this.lblCursos.TabIndex = 17;
+            this.lblCursos.Text = "Cursos";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(15, 73);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(137, 21);
+            this.comboBox1.TabIndex = 14;
+            // 
+            // FrmCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,7 +214,7 @@
             this.Controls.Add(this.lblCargaHoraria);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblId);
-            this.Name = "FrmCursos";
+            this.Name = "FrmCurso";
             this.Text = "FrmCursos";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
