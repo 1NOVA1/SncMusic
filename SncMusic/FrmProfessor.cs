@@ -133,5 +133,15 @@ namespace SncMusic
         {
 
         }
+
+        private void txtId_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -80,6 +80,7 @@
             this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(74, 20);
             this.txtId.TabIndex = 33;
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged_1);
             // 
             // label6
             // 
@@ -169,6 +170,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(211, 20);
             this.txtNome.TabIndex = 18;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // btnListar
             // 

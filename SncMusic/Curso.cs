@@ -164,20 +164,25 @@ namespace SncMusic
             try
             {
                 var comm = Banco.Abrir();
-                comm.CommandText = "select * from tb_professor_curso";
+                comm.CommandText = "select p.id_professor, p.nome_professor, p.cpf_professor, " +
+                    "p.email_professor " +
+                    "from tb_professor_curso pc inner join tb_professor p " +
+                    "on pc.professor_id_professor = p.id_professor " +
+                    "where pc.curso_id_curso = " + _id_curso;
+                var dr = comm.ExecuteReader();
+                while (dr.Read())
+                {
+                    lista.Add(new Professor(dr.GetInt32(0), dr.GetString(1), dr.GetString(2), dr.GetString(3)));
+                }
+                return lista;
             }
+                   
             catch (Exception)
             {
 
-                throw;
             }
             return lista;
             
         }
-
-
-
-
-
     }
 }
