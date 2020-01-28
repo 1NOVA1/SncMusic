@@ -40,11 +40,11 @@
             this.btnAlterar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbProfessor = new System.Windows.Forms.ComboBox();
             this.btnAssociar = new System.Windows.Forms.Button();
             this.lblProfessor = new System.Windows.Forms.Label();
             this.lblCursos = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbCurso = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,11 +142,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.cmbProfessor);
             this.groupBox1.Controls.Add(this.btnAssociar);
             this.groupBox1.Controls.Add(this.lblProfessor);
             this.groupBox1.Controls.Add(this.lblCursos);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbCurso);
             this.groupBox1.Location = new System.Drawing.Point(41, 220);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(431, 164);
@@ -154,13 +154,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Associar Professor";
             // 
-            // comboBox2
+            // cmbProfessor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(179, 73);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(137, 21);
-            this.comboBox2.TabIndex = 20;
+            this.cmbProfessor.FormattingEnabled = true;
+            this.cmbProfessor.Location = new System.Drawing.Point(179, 73);
+            this.cmbProfessor.Name = "cmbProfessor";
+            this.cmbProfessor.Size = new System.Drawing.Size(137, 21);
+            this.cmbProfessor.TabIndex = 20;
             // 
             // btnAssociar
             // 
@@ -183,19 +183,21 @@
             // lblCursos
             // 
             this.lblCursos.AutoSize = true;
-            this.lblCursos.Location = new System.Drawing.Point(34, 47);
+            this.lblCursos.Location = new System.Drawing.Point(12, 47);
             this.lblCursos.Name = "lblCursos";
             this.lblCursos.Size = new System.Drawing.Size(39, 13);
             this.lblCursos.TabIndex = 17;
             this.lblCursos.Text = "Cursos";
             // 
-            // comboBox1
+            // cmbCurso
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(137, 21);
-            this.comboBox1.TabIndex = 14;
+            this.cmbCurso.FormattingEnabled = true;
+            this.cmbCurso.Location = new System.Drawing.Point(15, 73);
+            this.cmbCurso.Name = "cmbCurso";
+            this.cmbCurso.Size = new System.Drawing.Size(137, 21);
+            this.cmbCurso.TabIndex = 14;
+            this.cmbCurso.DropDown += new System.EventHandler(this.cmbCurso_DropDown);
+            this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.cmbCurso_SelectedIndexChanged);
             // 
             // FrmCurso
             // 
@@ -240,7 +242,7 @@
         private System.Windows.Forms.Button btnAssociar;
         private System.Windows.Forms.Label lblProfessor;
         private System.Windows.Forms.Label lblCursos;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbCurso;
+        private System.Windows.Forms.ComboBox cmbProfessor;
     }
 }

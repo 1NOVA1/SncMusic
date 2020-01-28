@@ -44,6 +44,9 @@
             this.manutençãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matriculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +72,8 @@
             this.professoresToolStripMenuItem,
             this.cursosToolStripMenuItem,
             this.usuáriosToolStripMenuItem,
-            this.turmasToolStripMenuItem});
+            this.turmasToolStripMenuItem,
+            this.matriculasToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "&Cadastros";
@@ -162,6 +166,27 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.sairToolStripMenuItem.Text = "&Sair";
             // 
+            // matriculasToolStripMenuItem
+            // 
+            this.matriculasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novaToolStripMenuItem,
+            this.consultarToolStripMenuItem});
+            this.matriculasToolStripMenuItem.Name = "matriculasToolStripMenuItem";
+            this.matriculasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.matriculasToolStripMenuItem.Text = "Matriculas";
+            // 
+            // novaToolStripMenuItem
+            // 
+            this.novaToolStripMenuItem.Name = "novaToolStripMenuItem";
+            this.novaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novaToolStripMenuItem.Text = "Nova";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,6 +223,9 @@
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem turmasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem matriculasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
     }
 }
 
