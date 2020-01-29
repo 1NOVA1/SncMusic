@@ -63,7 +63,6 @@
   <ItemGroup>
     <Compile Include="Aluno.cs" />
     <Compile Include="Curso.cs" />
-    <Compile Include="Matricula.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
