@@ -16,15 +16,61 @@ namespace SncMusic
         {
             InitializeComponent();
         }
+            
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Matricula matricula = new Matricula();
+            matricula.Situacao = txtSituação.Text;
+            matricula.Horario = txtHorario.Text;
+            matricula.DiaSemana = txtDiaSemana.Text;
+            matricula.ValorCurso = Convert.ToDouble(txtValorCurso.Text);
+            matricula.Inserir();
+            if (matricula.Id > 0)
+            {
+                txtMatriculaId.Text = matricula.Id.ToString();
+                MessageBox.Show("Matricula feita com sucesso!");
+            }
+            else
+            {
 
-        private void FrmMatricula_Load(object sender, EventArgs e)
+            }
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbAluno_DropDown(object sender, EventArgs e)
+        {
+            Matricula matricula = new Matricula();
+            var dr = matricula.ListarTodos();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            cmbAluno.DataSource = dt;
+            cmbAluno.DisplayMember = "nome_aluno";
+            cmbAluno.ValueMember = "id_aluno";
+        }
+
+        private void cmbCurso_DropDown(object sender, EventArgs e)
+        {
+            Matricula matricula = new Matricula();
+            var dr = matricula.ListarTodos2();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            cmbCurso.DataSource = dt;
+            cmbCurso.DisplayMember = "nome_curso";
+            cmbCurso.ValueMember = "id_curso";
+
+        }
+
+        private void cmbCurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

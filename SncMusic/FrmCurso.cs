@@ -48,6 +48,11 @@ namespace SncMusic
             cmbCurso.ValueMember = "id_curso";
         }
 
+        private void txtID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void cmbCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
 

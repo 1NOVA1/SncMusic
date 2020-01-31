@@ -32,19 +32,17 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.lblCargaHoraria = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCargaHoraria = new System.Windows.Forms.TextBox();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.btnInserir = new System.Windows.Forms.Button();
-            this.btnAlterar = new System.Windows.Forms.Button();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbProfessor = new System.Windows.Forms.ComboBox();
             this.btnAssociar = new System.Windows.Forms.Button();
             this.lblProfessor = new System.Windows.Forms.Label();
             this.lblCursos = new System.Windows.Forms.Label();
             this.cmbCurso = new System.Windows.Forms.ComboBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,13 +82,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Valor R$";
             // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(140, 32);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(75, 20);
-            this.txtID.TabIndex = 4;
-            // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(140, 60);
@@ -121,24 +112,6 @@
             this.btnInserir.Text = "&Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
-            // 
-            // btnAlterar
-            // 
-            this.btnAlterar.Location = new System.Drawing.Point(221, 156);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 9;
-            this.btnAlterar.Text = "&Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(302, 156);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(75, 23);
-            this.btnConsultar.TabIndex = 10;
-            this.btnConsultar.Text = "&Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -199,19 +172,27 @@
             this.cmbCurso.DropDown += new System.EventHandler(this.cmbCurso_DropDown);
             this.cmbCurso.SelectedIndexChanged += new System.EventHandler(this.cmbCurso_SelectedIndexChanged);
             // 
+            // txtID
+            // 
+            this.txtID.Enabled = false;
+            this.txtID.Location = new System.Drawing.Point(141, 34);
+            this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(74, 20);
+            this.txtID.TabIndex = 32;
+            this.txtID.TextChanged += new System.EventHandler(this.txtID_TextChanged);
+            // 
             // FrmCurso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnConsultar);
-            this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtCargaHoraria);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCargaHoraria);
             this.Controls.Add(this.lblNome);
@@ -231,18 +212,16 @@
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblCargaHoraria;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCargaHoraria;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Button btnInserir;
-        private System.Windows.Forms.Button btnAlterar;
-        private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnAssociar;
         private System.Windows.Forms.Label lblProfessor;
         private System.Windows.Forms.Label lblCursos;
         private System.Windows.Forms.ComboBox cmbCurso;
         private System.Windows.Forms.ComboBox cmbProfessor;
+        private System.Windows.Forms.TextBox txtID;
     }
 }

@@ -17,13 +17,13 @@ namespace SncMusic
         public string Senha { get; set; }
         public string Situacao { get; set; }
 
-        public Usuario(int _id, string _nome, string _email, string _senha, string _situcacao)
+        public Usuario(int _id, string _nome, string _email, string _senha, string _situacao)
         {
             Id = _id;
             Nome = _nome;
             Email = _email;
             Senha = _senha;
-            Situacao = _situcacao;
+            Situacao = _situacao;
         }
         public Usuario(string _nome, string _email, string _senha, string _situacao)
         {

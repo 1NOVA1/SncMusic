@@ -36,14 +36,14 @@ namespace SncMusic
 
         private void novoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FrmProfessor frmprofessor = new FrmProfessor();
-            frmprofessor.MdiParent = this;
-            frmprofessor.Show();
-
+          
         }
 
         private void novoToolStripMenuItem1_Click_1(object sender, EventArgs e)
         {
+            FrmProfessor frmprofessor = new FrmProfessor();
+            frmprofessor.MdiParent = this;
+            frmprofessor.Show();
 
         }
 
@@ -53,6 +53,20 @@ namespace SncMusic
             frmCurso.MdiParent = this;
             frmCurso.Show();
 
+        }
+
+        private void novoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmUsuario frmusuario = new FrmUsuario();
+            frmusuario.MdiParent = this;
+            frmusuario.Show();
+        }
+
+        private void novaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmMatricula frmmatricula = new FrmMatricula();
+            frmmatricula.MdiParent = this;
+            frmmatricula.Show();
         }
     }
 }

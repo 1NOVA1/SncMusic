@@ -88,7 +88,7 @@ namespace SncMusic
         private void btnAlterar_Click_1(object sender, EventArgs e)
         {
             Usuario usuario = new Usuario();
-            if (usuario.Alterar(new Usuario(Convert.ToInt32(txtId.Text), txtNome.Text, txtSenha.Text, txtSituacao.Text, txtEmail.Text)))
+            if (usuario.Alterar(new Usuario(Convert.ToInt32(txtId.Text), txtNome.Text, txtEmail.Text, txtSenha.Text, txtSituacao.Text)))
                 MessageBox.Show("Dados do usuário alterados com sucesso!");
             else
                 MessageBox.Show("Falha ao alterar dados do usuário!");
