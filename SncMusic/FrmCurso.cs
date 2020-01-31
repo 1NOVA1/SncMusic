@@ -53,9 +53,6 @@ namespace SncMusic
 
         }
 
-        private void cmbCurso_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
-}
+    }
+

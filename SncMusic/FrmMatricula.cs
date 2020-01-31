@@ -16,7 +16,7 @@ namespace SncMusic
         {
             InitializeComponent();
         }
-            
+
         private void button1_Click(object sender, EventArgs e)
         {
             Matricula matricula = new Matricula();
@@ -71,7 +71,15 @@ namespace SncMusic
 
         private void cmbCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            var idcurso = cmbCurso.SelectedValue.ToString();
+            if (idcurso != string.Empty)
+            {
+                Matricula matricula = new Matricula();
+                matricula.ConsultarPorId(Convert.ToInt32(idcurso));
+                cmbCurso.Text = matricula.IdCurso.ToString();
+                txtValorCurso.Text = matricula.Nome;
+            }
         }
     }
 }
+
